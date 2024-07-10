@@ -16,4 +16,4 @@ def else_finally():
     else:
         print("Sucessufully executed code")
     finally:
-        print('This block of code  will always run anyway')
+        print("This block of code  will always run anyway")
