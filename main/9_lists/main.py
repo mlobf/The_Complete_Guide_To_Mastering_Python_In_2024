@@ -1,5 +1,7 @@
 """lists advanced features"""
-"""Teste de commit"""
+
+from aux.list_comprehentions import list_comprehentions_old, list_comprehentions_new
 
 if __name__ == "__main__":
-    print("oi")
+    # print(list_comprehentions_old())
+    print(list_comprehentions_new())
