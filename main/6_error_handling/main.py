@@ -16,11 +16,5 @@ if __name__ == "__main__":
         print("There is no connection.")
 
     """
-    #unknown_error(range(100))
-    unknown_error(['marcos','carlos'])
-
-
-
-
-
-
+    # unknown_error(range(100))
+    unknown_error(["marcos", "carlos"])
