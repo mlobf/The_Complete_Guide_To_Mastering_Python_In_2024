@@ -14,4 +14,11 @@ def list_comprehentions_old():
 
 def list_comprehentions_new():
     """simple list list_comprehentions"""
-    return [x for x in range(10) if x > 3 and x != 4]
+    # return type([x for x in range(100) if x > 3 and x != 4 or x%3]) # return an list
+
+    return [x**2 for x in range(100) if x > 3 and x != 4 or x % 3 == 0]
+
+
+def list_comprehentions_captitalize(people: list[str]) -> list:
+    """simple list list_comprehentions use"""
+    return [p.upper() for p in people]
