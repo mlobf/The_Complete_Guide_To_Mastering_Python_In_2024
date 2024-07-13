@@ -16,4 +16,17 @@ class Lamp:
 
     def describe(self):
         """Descrevendo"""
-        print(f'Lamp: {self.model} ({self.color})')
+        print(f"Lamp: {self.model} ({self.color})")
+
+
+class Animal:
+    """A simple Animal class"""
+
+    tricks: list[str] = []
+
+    def __init__(self, name):
+        self.name = name
+
+    def make_trick(self, trick_name: str):
+        """Simple trick"""
+        self.tricks.append(trick_name)
