@@ -39,10 +39,10 @@ class Animal:
 class Fruit:
     """Simple Fruit Class"""
 
-    def __init__(self, name: str,calories:float):
+    def __init__(self, name: str, calories: float):
         """_name is a private variable"""
         self._name = name
-        self._calories=calories
+        self._calories = calories
 
     @property
     def name(self):
@@ -50,11 +50,23 @@ class Fruit:
         return self._name
 
     @name.setter
-    def name(self,value):
+    def name(self, value):
         print(f"{self._name}is now {value}")
         self._name = value
         return self._name
 
+
+class Car:
+    """Simple Car"""
+    def __init__(self, model: str, color: str):
+        self.model = model
+        self.color = color
+
+    def __str__(self):
+        return f'{self.model}({self.color})'
+
+    def __repr__(self):
+        return f'Car model -> {self.model} and color ->({self.color})'
 
 
 

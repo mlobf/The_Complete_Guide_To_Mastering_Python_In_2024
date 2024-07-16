@@ -1,10 +1,9 @@
-"""Uso de classes
-"""
+"""Uso de classes """
 
-from aux.base_classes import Lamp, Animal,Fruit
-
+from aux.base_classes import Lamp, Animal,Fruit,Car
 
 if __name__ == "__main__":
+    """
     print('-'*79)
     aladim = Lamp("Led", "Vermelha")
     aladim.turn_on()
@@ -31,6 +30,11 @@ if __name__ == "__main__":
     print(banana.name)
     print(banana._calories)
     banana.name = "mela"
+    """
+    car:Car = Car("BMW","Blue")
+    print(car)
+    print(car.__repr__())
+
 
 
 
