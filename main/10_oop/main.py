@@ -1,6 +1,8 @@
 """Uso de classes """
 
-from aux.base_classes import Lamp, Animal,Fruit,Car
+from aux.base_classes import Animal, Fruit, Car
+from aux.private_protected import Lamp, EletricLamp
+from aux.inheritance import Animal,Cat,Dog
 
 if __name__ == "__main__":
     """
@@ -30,11 +32,23 @@ if __name__ == "__main__":
     print(banana.name)
     print(banana._calories)
     banana.name = "mela"
-    """
     car:Car = Car("BMW","Blue")
     print(car)
     print(car.__repr__())
+    apple:Fruit = Fruit("Apple",10)
+    apple2:Fruit = Fruit("Apple",10)
+    print(apple==apple2)
+    car.hello()
+    lamp: Lamp = Lamp("Led", 1234, 99933333)
+    lamp.print_model()
+    eletric_lamp = EletricLamp("Elamp", 10101, 88888,220)
+    eletric_lamp.do_something()
+    """
+    tiao = Cat("tiao",3.00)
+    tiao.meow()
+    tiao.sleep()
 
-
+    freud = Dog('freud',5.00)
+    freud.bark()
 
 

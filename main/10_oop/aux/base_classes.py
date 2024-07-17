@@ -2,6 +2,8 @@
 
 
 class Lamp:
+    """Simple Class Lamp"""
+
     def __init__(self, model: str, color: str):
         self.model = model
         self.color = color
@@ -46,6 +48,7 @@ class Fruit:
 
     @property
     def name(self):
+        """Simple getter"""
         print(f"{self._name}is being accessed")
         return self._name
 
@@ -55,19 +58,28 @@ class Fruit:
         self._name = value
         return self._name
 
+    def __eq__(self, other):
+        """Has the same values ?"""
+        return self.__dict__ == other.__dict__
+
 
 class Car:
     """Simple Car"""
+
     def __init__(self, model: str, color: str):
         self.model = model
         self.color = color
 
     def __str__(self):
-        return f'{self.model}({self.color})'
+        return f"{self.model}({self.color})"
 
     def __repr__(self):
-        return f'Car model -> {self.model} and color ->({self.color})'
+        return f"Car model -> {self.model} and color ->({self.color})"
 
+    def __eq__(self, other):
+        """Has the same values ?"""
+        return self.__dict__ == other.__dict__
 
-
-
+    def hello(self):
+        """Simple hello function"""
+        return print("hello")
